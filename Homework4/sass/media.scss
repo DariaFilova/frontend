@@ -1,0 +1,160 @@
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 33px 45px 34px 19px;
+        &__nav, &__search {
+            display: none;
+        }
+        &__burger {
+            display: block;
+        }
+        &__logo {
+            margin-right: 0;
+            width: 93px;
+        }
+    }
+
+    .promo {
+        &__left, &__nav {
+            display: none;
+        }
+        &__right {
+            width: 100%;
+            justify-content: center;
+        }
+        &__details {
+            margin-bottom: 22px;
+        }
+    }
+
+    .adsFirst, .adsSecond {
+        padding: 0;
+        flex-direction: column-reverse;
+        order: 1;
+        gap: 20px;
+        &__left {
+            width: 100%;
+
+        }
+        &__right {
+            
+            width: 100%;
+
+        }
+    }
+
+    .newItems {
+        padding: 60px 30px;
+        &__title {
+            text-align: center;
+        }
+        &__wrapper {
+            gap: 20px;
+        }
+        &__card {
+            &:not(:first-child) {
+                display: none;
+            }
+        }
+        &__prev, &__next {
+            width: 44px;
+            margin: 0;
+        }
+    }
+
+    .brands {
+        padding: 0 38px 60px 38px;
+        span {
+            display: none;
+        }
+        &__title {
+            text-align: center;
+        }
+
+        &__item {
+            width: 216px;
+            &:not(:nth-child(5)) {
+                display: none;
+            }
+        }
+        &__prev, &__next {
+            display: block;
+            width: 42px;
+            img {
+                width: 100%;
+            }
+
+        }
+    }
+    
+    .sale {
+        display: none;
+    }
+
+    .brands {
+        padding-top: 60px;
+        &__title {
+            margin-bottom: 30px;
+        }
+    }
+
+    .advantages {
+        padding: 0 62px 30px 62px;
+        &__title {
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 51px;
+        }
+        &__wrapper {
+            flex-wrap: wrap;
+            gap: 40px 50px;
+
+        }
+        &__item {
+            width: 105px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 27px;
+            img {
+                width: 62px;
+            }
+        }
+    }
+    
+
+    .footer {
+        padding: 40px 51px 18px 59px;
+        &__title {
+            font-size: 40px;
+            line-height: 54px;
+        }
+        &__wrapper {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        &__form {
+            flex-direction: column;
+            input {
+                width: 100%;
+            }
+            button {
+                width: 100%;
+            }
+        }
+        &__socials {
+            width: 100%;
+            font-size: 50px;
+            gap: 36px;
+        }
+        &__rights {
+            span {
+                margin-right: 30px;
+            }
+        }
+    }
+
+    
+    
+}
+

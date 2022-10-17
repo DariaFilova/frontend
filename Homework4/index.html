@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <script
+      src="https://kit.fontawesome.com/32135da272.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Fruity</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="header__logo" src="img/header/logo.png" alt="logo" />
+      <nav class="header__nav">
+        <a class="header__link" href="#promo">Home</a>
+        <a class="header__link" href="#newItems">Catalog</a>
+        <a class="header__link" href="#advantages">About Us</a>
+        <a class="header__link" href="#footer">Contacts</a>
+        <a class="header__link" href="#footer">Shipping and Details</a>
+      </nav>
+      <div class="header__search">
+        <i class="header__search_icon fa-solid fa-magnifying-glass"></i>
+        <input
+          class="header__search_input"
+          type="search"
+          placeholder="Search"
+        />
+      </div>
+      <div class="header__basket">
+        <img
+          src="img/header/basket.svg"
+          alt="basket"
+          class="header__basket_icon"
+        />
+        <div class="header__basket_count">1</div>
+      </div>
+      <img
+        class="header__burger"
+        src="img/header/burger-menu.svg"
+        alt="burger"
+      />
+    </header>
+
+    <main>
+      <section class="promo" id="promo">
+        <div class="promo__left">
+          <h1 class="promo__title">
+            Fashion is the armor to survive the reality of everyday life.
+          </h1>
+          <p class="promo__text">
+            We are more than a shop. Feel confident with our clothes symbolizing
+            the power of youth!
+          </p>
+          <button class="promo__button">View Catalogue</button>
+        </div>
+
+        <div class="promo__right">
+          <div class="promo__nav">
+            <button class="promo__nav_button">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="promo__nav_button">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="promo__details">
+            <h3>T-shirt “Skeleton”</h3>
+            <p class="promo__details_text">12$</p>
+            <button class="promo__details_button">Details</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="adsFirst">
+        <div class="adsFirst__left">
+          <h3 class="adsFirst__left_title">Hoodie “Demon”</h3>
+          <div class="adsFirst__left_price">20$</div>
+          <button class="adsFirst__left_button">Details</button>
+        </div>
+        <div class="adsFirst__right">
+          <div class="adsFirst__right_text">
+            UP TO -40% SALE FOR <br />
+            SUMMER <br />
+            COLLECTION
+          </div>
+        </div>
+      </section>
+      <section class="newItems" id="newItems">
+        <h2 class="newItems__title">New Items</h2>
+        <div class="newItems__wrapper">
+          <div class="newItems__prev">
+            <img src="img/newItems/arrow_prev.png" alt="prev" />
+          </div>
+          <div class="newItems__cards">
+            <div class="newItems__card">
+              <img src="img/newItems/card1.png" alt="t-shirt" />
+              <div class="newItems__card_name">T-shirt “Patagonia”</div>
+              <div class="newItems__card_price">25$</div>
+              <button class="newItems__card_button">Buy</button>
+            </div>
+            <div class="newItems__card">
+              <img src="img/newItems/card2.png" alt="t-shirt" />
+              <div class="newItems__card_name">Hoodie “Flowers”</div>
+              <div class="newItems__card_price">30$</div>
+              <button class="newItems__card_button">Buy</button>
+            </div>
+            <div class="newItems__card">
+              <img src="img/newItems/card3.png" alt="t-shirt" />
+              <div class="newItems__card_name">Hoodie “N6”</div>
+              <div class="newItems__card_price">25$</div>
+              <button class="newItems__card_button">Buy</button>
+            </div>
+            <div class="newItems__card">
+              <img src="img/newItems/card4.png" alt="t-shirt" />
+              <div class="newItems__card_name">Hoodie “Mutant”</div>
+              <div class="newItems__card_price">35$</div>
+              <button class="newItems__card_button">Buy</button>
+            </div>
+          </div>
+          <div class="newItems__next">
+            <img src="img/newItems/arrow_next.png" alt="next" />
+            <!--  <i class="fa-solid fa-arrow-right"></i> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="adsSecond">
+        <div class="adsSecond__left">
+          <h3 class="adsSecond__left_title">T-Shirt “Victory”</h3>
+          <div class="adsSecond__left_price">15$</div>
+          <button class="adsSecond__left_button">Details</button>
+        </div>
+        <div class="adsSecond__right">
+          <div class="adsSecond__right_text">
+            UP TO -40% SALE FOR <br />
+            WOMEN <br />
+            COLLECTION
+          </div>
+        </div>
+      </section>
+
+      <section class="sale">
+        <h2 class="sale__title">Sale</h2>
+        <div class="sale__wrapper">
+          <div class="sale__prev">
+            <img src="img/newItems/arrow_prev.png" alt="prev" />
+          </div>
+          <div class="sale__cards">
+            <div class="sale__card">
+              <img src="img/sale/sale1.png" alt="t-shirt" />
+              <div class="sale__card_name">T-shirt “Patagonia”</div>
+              <div class="sale__card_price">25$</div>
+              <button class="sale__card_button">Buy</button>
+            </div>
+            <div class="sale__card">
+              <img src="img/sale/sale2.png" alt="t-shirt" />
+              <div class="sale__card_name">T-Shirt “Pink Floyd”</div>
+              <div class="sale__card_price">30$</div>
+              <button class="sale__card_button">Buy</button>
+            </div>
+            <div class="sale__card">
+              <img src="img/sale/sale3.png" alt="t-shirt" />
+              <div class="sale__card_name">T-Shirt “Nirvana”</div>
+              <div class="sale__card_price">25$</div>
+              <button class="sale__card_button">Buy</button>
+            </div>
+            <div class="sale__card">
+              <img src="img/sale/sale4.png" alt="t-shirt" />
+              <div class="sale__card_name">T-Shirt “Baby Tee”</div>
+              <div class="sale__card_price">35$</div>
+              <button class="sale__card_button">Buy</button>
+            </div>
+          </div>
+          <div class="sale__next">
+            <img src="img/newItems/arrow_next.png" alt="next" />
+            <!--  <i class="fa-solid fa-arrow-right"></i> -->
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="brands">
+        <h2 class="brands__title">Brands <span> we collaborate with</span> </h2>
+          <div class="brands__wrapper">
+            <div class="brands__prev">
+              <img src="img/newItems/arrow_prev.png" alt="prev" />
+            </div>
+            <div class="brands__items">
+              <div class="brands__item">
+                <img src="img/brands/lacoste.png" alt="lacoste" />
+              </div>
+              <div class="brands__item">
+                <img src="img/brands/givenchy.png" alt="givenchy" />
+              </div>
+              <div class="brands__item">
+                <img src="img/brands/versace.png" alt="versace" />
+              </div>
+              <div class="brands__item">
+                <img src="img/brands/chanel.png" alt="chanel" />
+              </div>
+              <div class="brands__item">
+                <img src="img/brands/burberry.png" alt="burberry" />
+              </div>
+              <div class="brands__item">
+                <img src="img/brands/fendi.png" alt="fendi" />
+              </div>
+              <div class="brands__item">
+                <img src="img/brands/levis.png" alt="levis" />
+              </div>
+              <div class="brands__item">
+                <img src="img/brands/hermes.png" alt="hermes" />
+              </div>
+            </div>
+            
+            
+            <div class="brands__next">
+              <img src="img/newItems/arrow_next.png" alt="prev" />
+            </div>
+          </div>
+        </h2>
+      </section>
+      <section class="advantages" id="advantages">
+        <div class="advantages__title">Why people choose our shop</div>
+        <div class="advantages__wrapper">
+          <div class="advantages__item">
+            <img src="img/advantages/like.png" alt="like">
+            <p>High Quality</p>
+          </div>
+          <div class="advantages__item">
+            <img src="img/advantages/world.png" alt="world">
+            <p>Worldwide shipping</p>
+          </div>
+          <div class="advantages__item">
+            <img src="img/advantages/money.png" alt="money">
+            <p>Low Prices</p>
+          </div>
+          <div class="advantages__item">
+            <img src="img/advantages/card.png" alt="card">
+            <p>Convenient Payment System</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="footer__wrapper">
+        <div class="footer__logo"><img src="img/header/logo.png" alt="logo" ></div>
+        
+        <div class="footer__subscribe">
+          <div class="footer__title">Subscribe to our newsletter</div>
+          <form class="footer__form">
+            <input type="email" placeholder="Write your email">
+            <button>Subscribe</button>
+          </form>
+          <div class="footer__socials">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
+
+          </div>
+          
+        </div>
+        <div class="footer__number"> +1963258654</div>
+      </div>
+      <div class="footer__rights">
+        <p> <span>&#169;</span> 2020 All rights reserved</p>
+      </div>
+
+    </footer>
+  </body>
+</html>

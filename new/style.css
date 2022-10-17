@@ -1,0 +1,48 @@
+body {
+    height: 2000px;
+}
+
+
+.item {
+    width: 400px;
+    height: 400px;
+    background: url('https://www.vets4pets.com/siteassets/species/cat/close-up-of-cat.jpg?width=1040');
+    background-size: cover;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+
+
+.item:hover {
+    transform: scale(2);
+    
+}
+
+.item2 {
+    width: 400px;
+    height: 400px;
+    background: url('https://www.vets4pets.com/siteassets/species/cat/close-up-of-cat.jpg?width=1040');
+    background-size: cover;
+    display: inline-block;
+    transition: all 0.5s;
+
+}
+
+.item2:hover {
+    height: 600px;
+    width: 600px;
+}
+
+input {
+    margin: 0 auto;
+    width: 400px;
+    height: 40px;
+    margin-top: 70px;
+    transition: transform 0.7s;
+}
+
+input:active {
+    transform: scaleX(1.5);
+}
+

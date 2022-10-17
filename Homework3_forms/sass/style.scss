@@ -35,6 +35,7 @@ h1, h2 {
         display: flex;
         justify-content: center;
         align-items: center;
+        border: none;
         &:hover {
             background-color: #005FA3;
         }
@@ -53,6 +54,10 @@ h1, h2 {
 
 .header {
     padding: 33px 0 34px 0;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 20;
     .container {
         display: flex;
         align-items: center;
@@ -78,7 +83,7 @@ h1, h2 {
         display: flex;
         flex-direction: column;
     }
-    padding-top: 170px;
+    padding-top: 280px;
     padding-bottom: 113px;
     background: url('/img/promo_bg.png');
     background-size: cover;
@@ -94,7 +99,8 @@ h1, h2 {
         width: 270px;
         height: 60px;
         background-color: #005FA3;
-        text-align: center;
+        color: white;
+        border: none;
         font-weight: 400;
         font-size: 18px;
         line-height: 60px;
@@ -163,6 +169,10 @@ h1, h2 {
     .title {
         margin-bottom: 60px;
     }
+
+    span {
+        color:#005FA3;
+    }
     &__left {
         width: 40%;
         &_info {
@@ -182,9 +192,8 @@ h1, h2 {
         gap: 30px;
     }
     &__item {
-        padding: 30px 40px 40px 40px;
+        padding: 30px 40px 30px 40px;
         width: 255px;
-        height: 255px;
         background-color: #EBEBEB;
         transition: all 500ms ease;
         &_number {
@@ -197,7 +206,7 @@ h1, h2 {
             font-size: 14px;
             line-height: 18px;
             margin-top: 30px;
-            margin-bottom: 40px;
+            margin-bottom: 47px;
         }
         &_link {
             text-decoration: underline;
@@ -383,4 +392,15 @@ h1, h2 {
         }
     }
    
+}
+
+.footer {
+    padding: 50px 0 40px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 19px;
+    }
 }
