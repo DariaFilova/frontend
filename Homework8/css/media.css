@@ -6,6 +6,7 @@
   .header__hamburger i { font-size: 36px; }
   .services { padding: 50px 0; }
   .services__subtitle { display: none; }
+  .services__title { margin-bottom: 63px; }
   .services__wrapper { grid-template-columns: 1fr; grid-template-rows: repeat(6, minmax(auto, 360px)); }
   .services__info h4 { -ms-flex-item-align: end; align-self: end; }
   .services__info button { display: none; }
