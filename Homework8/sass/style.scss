@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Noto+Sans:wght@300;400;700;900&display=swap');
+/* font-family: 'Merriweather', serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container {
+    width: 1116px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.header {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 11;
+    .container {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 260px 486px 173px;
+    padding: 28px 0;
+    justify-content: space-between;
+    align-items: center;   
+    }
+    &__hamburger {
+        display: none;
+    }
+    
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        cursor: pointer;
+    }
+    &__title {
+        font-family: 'Merriweather', serif;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 50px;
+        color: #005FA3;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        text-transform: uppercase;
+    }
+
+    &__link {
+        a {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #222222; 
+        }
+    }
+
+    &__button {
+        padding: 10px 21px;
+        border-radius: 25px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        border: 2px solid #000000;
+        border-radius: 25px;
+        transition: 0.3s ease;
+        background-color: #fff;
+        cursor: pointer;
+        &:hover {
+            background-color: #005FA3;
+            color: white;
+            transform: scale(1.1);
+            border: none;
+        }
+    }
+}
+
+.main {
+    padding-top: 100px;
+}
+
+.services {
+    background-color: #EBEBEB;
+    padding: 140px 0;
+    &__subtitle{
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 33px;
+        color: #BDBDBD;
+        margin-bottom: 40px;
+    }
+    &__title {
+        font-family: 'Merriweather', serif;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 69px;
+        color: #333333;
+        margin-bottom: 102px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 360px 360px;
+        gap: 30px;
+    }
+    &__item {
+        background: url('../img/services-item.png') no-repeat ;
+        background-size: cover;
+        position: relative;
+        color: white;
+        padding: 40px 0 40px 45px;
+        &:hover {
+            &::after {
+                background: rgba(0, 95, 163, 0.65);
+            }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.514);
+            z-index: 1;
+            transition: 0.3s;
+            
+
+        }
+    }
+    &__info {
+        display: grid;
+        position: relative;
+        z-index: 2;
+        height: 100%;
+        h4 {
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 30px;
+        }
+        button {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: uppercase;
+            padding: 10px 21px;
+            border-radius: 25px;
+            border: 2px solid #fff;
+            background-color: transparent;
+            color: white;
+            justify-self: start;
+            align-self: end;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+}
+
+.about {
+    padding: 140px 0;
+    .container {
+        display: grid;
+        grid-template-columns: 40% 50%;
+        gap: 125px;
+    }
+    &__subtitle {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 33px;
+        color: #BDBDBD;
+        margin-bottom: 40px;
+    }
+    &__title {
+        font-family: 'Merriweather';
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 69px;
+        color: #333333;
+        margin-bottom: 60px;
+        span {
+            font-family: 'Merriweather';
+            color: #005FA3;
+        }
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+        text-align: justify;
+        
+    }
+    &__right {
+        display: grid;
+        grid-template-columns: 255px 255px;
+        grid-template-rows: 255px 255px;
+        gap: 30px;
+    }
+    &__item {
+        background: #EBEBEB;
+        padding: 30px 0 23px 30px;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        align-items: center;
+        justify-content: left;
+        color: #000000;
+        transition: 0.3s;
+        &_title {
+            font-weight: 900;
+            font-size: 55px;
+            line-height: 66px;
+            letter-spacing: 0.1em;
+           
+        }
+        &_text {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18px;
+            
+        }
+        &_button {
+            border: 3px solid #005FA3;
+            border-radius: 25px;
+            width: 173px;
+            height: 50px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #005FA3;
+            background: transparent;
+            cursor: pointer;
+            transition: 0.2s;
+            &:hover {
+                background: white;
+                color: #005FA3 !important; 
+                transform: scale(1.1);
+            }
+            
+        }
+        &_details {
+            display: none;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            text-decoration-line: underline;
+            color: #005FA3;
+        }
+        &:hover {
+            background-color: #005FA3;
+            color: #fff;
+            .about__item_button {
+                border: 3px solid #fff;
+                color: #fff;
+            }
+            a {
+                color: #fff;
+            }
+            
+        }
+    }
+}
+
+.contact {
+    display: none;
+    
+    
+}
+
+.footer {
+    display: none;
+}
