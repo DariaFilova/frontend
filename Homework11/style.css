@@ -1,0 +1,54 @@
+.container {
+    padding: 40px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+h2 {
+    margin: 20px 0;
+}
+.colored {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+}
+
+.fruits {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item {
+    width: 150px;
+    padding: 20px;
+    border: 3px solid rgb(143, 142, 231);
+    border-radius: 10px;
+    background-color: rgba(202, 186, 229, 0.171);
+}
+
+.item .price {
+    margin: 7px 0;
+    font-weight: 700;
+}
+
+.active {
+    width: 500px;
+    height: 500px;
+}
+
+.imagesBig {
+    height: 100%;
+    margin-top: 50px;
+    position: relative;
+}
