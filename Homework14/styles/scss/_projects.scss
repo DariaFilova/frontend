@@ -1,0 +1,68 @@
+
+.projects {
+    padding: 137px 0;
+    background-color: $projectsBackground;
+    &__cards {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__background {
+        background: url('../../img/project.png');
+        background-size: cover;
+        height: 376px;
+        padding: 10px;
+        transition-duration: 0.3s;
+        position: relative;
+        &:before {
+            content: '';
+            opacity: 0;
+            position: absolute;
+            z-index: 3;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(41, 41, 41, 0.349) 20%, transparent 100%);
+
+            transition-duration: 0.3s;
+           
+
+        }
+        &:hover {        
+            .projects__item_content {
+                opacity: 1;
+            }
+            &:before {
+                opacity: 1;
+            }
+        }
+        
+
+    }
+    &__item {
+        width: 437px;
+        display: flex;
+        flex-direction: column;
+        h3 {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            margin-bottom: 6px;
+        }
+        &_content {
+            opacity: 0;
+            display: flex;
+            position: relative;
+            z-index: 6;
+            height: 100%;
+            flex-direction: column;
+            justify-content: end;
+            color: white;
+            transition-duration: 0.3s;
+        
+        }
+    }
+  
+}
+

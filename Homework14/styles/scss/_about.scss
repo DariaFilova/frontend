@@ -1,0 +1,31 @@
+
+.about {
+    padding-top: 70px;
+    display: flex;
+    
+    &__left, &__right {
+        width: 50%;
+    }
+    &__left {
+        img {
+            height: 100%;
+        }
+    }
+    &__right {
+        h2{
+            margin-bottom: 23px;
+            text-align: center;
+        }
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        p {
+            margin-top: 23px;
+            width: 624px;
+            font-size: 20px;
+            text-align: justify;
+        }
+    }
+
+}
