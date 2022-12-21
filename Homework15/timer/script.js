@@ -3,7 +3,8 @@ const startBtn = document.getElementById('start');
 const stopBtn = document.getElementById('stop');
 const resetBtn = document.getElementById('reset');
 
-let seconds = 11;
+let initial = 289;
+let seconds = initial;
 let interval = null;
 
 setTime();
@@ -54,6 +55,6 @@ function stop() {
 
 function reset() {
     stop();
-    seconds = 0;
-    time.innerText = '00:00:00';
+    seconds = initial;
+    setTime();
 }
