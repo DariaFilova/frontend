@@ -1,0 +1,36 @@
+.header {
+    padding: 33px 0 34px 0;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 20;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__nav {
+        display: flex;
+        gap: 60px;
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #222222;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            /* &:not(:last-child) {
+                margin-right: 68px;
+            } */
+        }
+    }
+    &__hamburger {
+        display: none;
+        &_icon {
+            font-size: 24px;
+            
+        }
+        
+    }
+}
+

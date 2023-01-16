@@ -1,0 +1,114 @@
+.contacts {
+    background-image: url('../../img/contact_bg.png');
+    background-size: cover;
+    color: white;
+    padding-top: 122px;
+    padding-bottom: 140px;
+    .container {
+        display: flex;
+    }
+
+    .title {
+        margin-top: 0;
+        margin-bottom: 60px;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 69px;
+    }
+
+    &__left {
+        width: 50%;
+        padding-right: 100px;
+    }
+
+    &__text {
+        margin-top: 60px;
+        margin-bottom: 80px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;     
+    }
+
+    &__links {
+        display: flex;
+    }
+
+    &__link {
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 300;
+            font-size: 21px;
+            line-height: 29px;
+        }
+        i {
+            font-size: 30px;
+            margin-right: 10px;  
+        }
+        &:first-child {
+            margin-right: 40px;
+        }
+    }
+
+
+    &__right {
+        width: 50%;
+       padding-top: 13px;
+        form {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        input {
+            background: transparent;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid white;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            &::placeholder {
+                font-weight: 300;
+                font-size: 21px;
+            }
+        }
+
+        input[name=textarea] {
+            padding-bottom: 105px;
+            width: 100%;
+        }
+
+        button {
+            width: 270px;
+            height: 60px;
+            color: #fff;
+            background-color: #005FA3;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            display: block;
+            margin-top: 30px;
+            align-self: flex-end;
+            
+        } 
+        label {
+            display: flex;
+            flex-direction: column;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;        
+        }
+    }
+
+    &__fields {
+        display: flex;
+        margin-bottom: 35px;
+        justify-content: space-between;
+        input {
+            width: 255px;
+            padding-bottom: 15px;
+        }
+    }
+   
+}
+

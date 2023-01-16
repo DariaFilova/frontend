@@ -1,0 +1,43 @@
+.promo {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    padding-top: 280px;
+    padding-bottom: 113px;
+    background: url('/img/promo_bg.png');
+    background-size: cover;
+    color: #fff;
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 66px;
+        text-align: left;
+    }
+    &__button {
+        margin-top: 80px;
+        margin-bottom: 70px;
+        width: 270px;
+        height: 60px;
+        background-color: #005FA3;
+        color: white;
+        border: none;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 60px;
+    }
+    .navigation {
+        &_item {
+            border: none;
+            background-color: #ffffff41;
+            &:hover {
+                background-color: #ffffff5e;
+            }
+        }
+        &_icon {
+            font-size: 16px;
+            color: white;
+        }
+    }
+    
+}

@@ -5,8 +5,11 @@
     
     .header {
         padding: 20px 0;
-        &__logo {
-            width: 25%;
+        &__nav {
+            display: none;
+        }
+        &__hamburger {
+            display: block;
         }
     }
 
