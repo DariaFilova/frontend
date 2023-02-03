@@ -1,0 +1,45 @@
+.watch {
+    text-align: center;
+    background-color: var(--darkdark);
+    width: 100%;
+    max-width: 360px;
+    margin: 4rem auto;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.time {
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+        background: none;
+        border: none;
+        outline: none;
+        user-select: none;
+        appearance: none;
+    
+        font-size: 1.25rem;
+        color: var(--darkdark);
+        background-color: var(--primary);
+        margin: 0 0.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+    
+        transition: 0.4s;
+        &:hover {
+            opacity: 0.7;
+        }
+        &:active {
+            background-color:var(--dark);
+            opacity: 0.7;
+        }
+    }
+}
